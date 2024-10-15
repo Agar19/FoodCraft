@@ -1,0 +1,115 @@
+/* style.css */
+
+/* Define CSS variables */
+:root {
+    --font-family: Arial, sans-serif;
+    --line-height: 1.6;
+    --bg-color: #f9f9f9;
+    --text-color: #333;
+    --light-text-color: #555;
+    --header-bg-color: #3f51b5;
+    --footer-bg-color: #afbbfd;
+    --white-bg: #fff;
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --transition-speed: 0.3s;
+}
+
+/* General styles */
+body {
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+
+.headerTop {
+    font-size: 2rem;
+    color: var(--text-color);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.categoriesListed {
+    padding: 20px;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+}
+
+.categoriesListed h2, .categoriesListed h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.categoriesListed table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.categoriesListed td {
+    padding: 12px;
+    text-align: center;
+    color: var(--light-text-color);
+    transition: color var(--transition-speed);
+}
+
+.categoriesListed td:hover {
+    color: #5A9BD5;
+}
+
+/* Recipe details styles */
+section {
+    background: var(--white-bg);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: var(--box-shadow);
+}
+
+.details p, #nutrition-info p {
+    margin: 5px 0;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+/* Food gallery styles */
+.foodGallery {
+    padding: 20px;
+}
+
+.foodItems {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.foodItem {
+    flex: 0 0 auto;
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+.foodItem img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.rating {
+    margin-top: 5px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--footer-bg-color);
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
