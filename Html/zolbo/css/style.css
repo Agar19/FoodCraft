@@ -1,17 +1,97 @@
-/* style.css */
-
-/* Define CSS variables */
+/* Define your color variables */
 :root {
-    --font-family: Arial, sans-serif;
-    --line-height: 1.6;
-    --bg-color: #f9f9f9;
-    --text-color: #333;
-    --light-text-color: #555;
-    --header-bg-color: #3f51b5;
-    --footer-bg-color: #afbbfd;
-    --white-bg: #fff;
-    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    --transition-speed: 0.3s;
+    --primary-color: #ff6600;   /* Bright orange */
+    --secondary-color: #333333; /* Dark gray */
+    --background-color: #ffffff; /* Light mode background */
+    --backgroundHeader-color: #333333;
+    --textList-color: #333333;      /* Dark gray (light mode) */
+    --text-color:#ffff;
+    --accent-color: #ffc107;    /* Light orange for highlights */
+    --hover-color: #e65c00;     /* Darker shade for hover effects */
+    --footer-bg-color: #222222; /* Very dark gray for footer */
+    --card-bg-color: #ffffff;   /* White background for card elements */
+    --dark-background-color: #000000; /* Black background for dark mode */
+    --dark-text-color: #ffffff; /* White text for dark mode */
+}
+
+/* Header styles */
+header {
+    background-color: var(--backgroundHeader-color);
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-form button {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+.sign-up {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sign-up:hover {
+    background-color: darken(var(--primary-color), 10%);
 }
 
 /* General styles */
@@ -20,87 +100,167 @@ body {
     line-height: var(--line-height);
     margin: 0;
     padding: 0;
-    background-color: var(--bg-color);
+    background-color: var(--background-color); /* White background for light mode */
+    color: var(--textList-color); /* Dark gray text for light mode */
+    padding-top: 80px; /* Adjust based on the height of your navbar */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Added transition for smooth effect */
+
 }
 
+/* Dark mode styles */
+body.dark-mode {
+    background-color: var(--dark-background-color); /* Dark background for dark mode */
+    color: var(--dark-text-color); /* White text for dark mode */
+}
+
+.headerTop,
+.ingredientsGallery h2,
+.foodGallery h2,
+.foodItem h3,
+.view-all-text a {
+    color: var(--textList-color); /* Light mode text color */
+}
+
+/* Dark mode overrides */
+body.dark-mode .headerTop,
+body.dark-mode .ingredientsGallery h2,
+body.dark-mode .foodGallery h2,
+body.dark-mode .foodItem h3,
+body.dark-mode .view-all-text a {
+    color: var(--dark-text-color); /* White text for dark mode */
+}
+
+/* Add a class for dark mode */
+div {
+    color: inherit; /* Use the inherited color from the body */
+}
 .headerTop {
     font-size: 2rem;
-    color: var(--text-color);
+    color: var(--textList-color);
     text-align: center;
     margin: 20px 0;
 }
 
-.categoriesListed {
+/* Slider styles for ingredients and food */
+.ingredientsGallery, .foodGallery {
     padding: 20px;
-    background-color: var(--bg-color);
-    border-radius: 8px;
+    position: relative; /* For positioning buttons */
+    margin-top: 20px; /* Adjust accordingly */
+}
+.ingredientsGallery h2 {
+    color: var(--textList-color); /* Ensure this color is visible against the background */
+    margin: 10px 0; /* Adjust margins if necessary */
+    font-size: 1.5rem; /* Set a reasonable font size */
 }
 
-.categoriesListed h2, .categoriesListed h3 {
-    color: var(--text-color);
-    font-size: 1.5rem;
-}
-
-.categoriesListed table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.categoriesListed td {
-    padding: 12px;
-    text-align: center;
-    color: var(--light-text-color);
-    transition: color var(--transition-speed);
-}
-
-.categoriesListed td:hover {
-    color: #5A9BD5;
-}
-
-/* Recipe details styles */
-section {
-    background: var(--white-bg);
-    border-radius: 8px;
-    padding: 15px;
-    margin: 10px 0;
-    box-shadow: var(--box-shadow);
-}
-
-.details p, #nutrition-info p {
-    margin: 5px 0;
-}
-
-ul, ol {
-    margin-left: 20px;
-}
-
-/* Food gallery styles */
-.foodGallery {
-    padding: 20px;
-}
-
-.foodItems {
+.ingredients-slider, .food-slider {
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    overflow-x: auto; /* Enable horizontal scrolling */
     scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+    gap: 10px;
+}
+
+/* Hide default scrollbar */
+.slider-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.slider-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+/* Item styles for ingredients and food */
+.ingredientItem, .foodItem {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    text-align: center;
+    scroll-snap-align: start;
+    background-color: var(--white-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    transition: transform var(--transition-speed);
+    transition: transform 0.3s ease-in-out;
+}
+
+.ingredientItem {
+    flex: 0 0 120px;
 }
 
 .foodItem {
-    flex: 0 0 auto;
-    width: 150px;
-    margin: 10px;
-    text-align: center;
-    scroll-snap-align: start;
+    flex: 0 0 200px;
+}
+
+.ingredientItem:hover, .foodItem:hover {
+    transform: translateY(-5px);
+}
+
+.ingredientItem img, .foodItem img {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.ingredientItem img {
+    width: 80px;
+    height: 80px;
 }
 
 .foodItem img {
     width: 100%;
-    border-radius: 8px;
+    height: 150px;
+    border-radius: 5px;
 }
 
-.rating {
+.ingredientItem span, .foodItem .rating {
+    display: block;
     margin-top: 5px;
+}
+
+.view-all-text {
+    position: absolute; /* Allows positioning within the foodGallery */
+    top: 50px; /* Adjust as needed */
+    right: 50px; /* Adjust as needed */
+    font-size: 16px; /* Font size */
+}
+
+.view-all-text a {
+    text-decoration: none; /* Remove underline */
+    color: var(--primary-color); /* Use your primary color */
+    font-weight: bold; /* Make it bold for emphasis */
+}
+
+.view-all-text a:hover {
+    text-decoration: underline; /* Underline on hover for effect */
+    color: var(--hover-color); /* Change color on hover */
+}
+
+/* Slider controls */
+.prev, .next, .ingredients-prev, .ingredients-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+    z-index: 1;
+}
+
+.prev:hover, .next:hover, .ingredients-prev:hover, .ingredients-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.ingredients-prev, .prev {
+    left: 10px;
+}
+
+.ingredients-next, .next {
+    right: 10px;
 }
 
 /* Footer styles */
@@ -109,7 +269,24 @@ footer {
     padding: 10px 0;
     background-color: var(--footer-bg-color);
     color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+}
+
+.floating-toggle {
+    position: fixed;      /* Use fixed to keep it in the same position on scroll */
+    bottom: 20px;        /* Distance from the bottom of the viewport */
+    right: 20px;         /* Distance from the right of the viewport */
+    background-color: var(--primary-color); /* Background color */
+    color: white;        /* Text color */
+    border: none;        /* No border */
+    border-radius: 5px;  /* Rounded corners */
+    padding: 10px 15px;  /* Padding for the button */
+    font-size: 1rem;     /* Font size */
+    cursor: pointer;      /* Cursor style */
+    z-index: 1000;       /* Ensure it appears in front of other elements */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.floating-toggle:hover {
+    background-color: var(--hover-color); /* Change color on hover */
 }
