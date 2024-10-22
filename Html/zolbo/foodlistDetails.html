@@ -46,7 +46,7 @@
                         <li>Salt and pepper to taste</li>
                     </ul>
                 </div>
-            
+
                 <!-- Instructions Section -->
                 <div id="instructions">
                     <h4>Instructions</h4>
@@ -58,7 +58,7 @@
                         <li>Season with salt and pepper, serve hot.</li>
                     </ol>
                 </div>
-            
+
                 <!-- Nutrition Info Section -->
                 <div id="nutrition-info">
                     <h4>Nutrition Information</h4>
@@ -80,7 +80,6 @@
     const body = document.body;
     body.classList.toggle('dark-mode');
 
-    // Save the current mode in localStorage
     if (body.classList.contains('dark-mode')) {
         localStorage.setItem('dark-mode', 'enabled');
     } else {
@@ -88,7 +87,6 @@
     }
 }
 
-// Check localStorage on page load to set the initial mode
 window.onload = function() {
     const darkModeSetting = localStorage.getItem('dark-mode');
     if (darkModeSetting === 'enabled') {
