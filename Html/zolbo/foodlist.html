@@ -5,57 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browse Recipes</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css"> <!-- Add your main styles here if needed -->
 </head>
 <body>
-    <header class="headerTop">Explore your recipes</header>
-    <div class="categoriesListed">
+    <header>
+        <img href="mainPage.html" src="../pics/RatLogo-removebg-preview.png" alt="FoodCraft Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Calorie count</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <form role="search" class="search-form">
+            <input type="search" placeholder="Search recipes..." aria-label="Search recipes">
+            <button type="submit">Search</button>
+        </form>
+        <a href="login.html" class="sign-up">Sign Up/Log In</a>
+    </header>
+
+    <!-- Ingredient slider with round images -->
+    <div class="ingredientsGallery">
         <h2>Popular Ingredients</h2>
-        <table>
-            <tbody>
-                <tr>
-                    <td>Asparagus</td>
-                    <td>Avocado</td>
-                    <td>Bacon</td>
-                    <td>Beans</td>
-                </tr>
-                <tr>
-                    <td>Beef</td>
-                    <td>Bread</td>
-                    <td>Cauliflower</td>
-                    <td>Cheese</td>
-                </tr>
-                <tr>
-                    <td>Chicken</td>
-                    <td>Chicken Breasts</td>
-                    <td>Chicken Thighs</td>
-                    <td>Chicken Wing</td>
-                </tr>
-                <tr>
-                    <td>Duck</td>
-                    <td>Egg</td>
-                    <td>Ground Beef</td>
-                    <td>Pork</td>
-                </tr>
-                <tr>
-                    <td>Pasta</td>
-                    <td>Pork Chops</td>
-                    <td>Potato</td>
-                    <td>Rice</td>
-                </tr>
-                <tr>
-                    <td>Salmon</td>
-                    <td>Shrimp</td>
-                    <td>Tofu</td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="slider-container ingredients-slider">
+            <div class="ingredientItem">
+                <img src="./picture/Asparagus.jpg" alt="Asparagus">
+                <span>Asparagus</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/Avocado.jpg" alt="Avocado">
+                <span>Avocado</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/bacon.jpg" alt="Bacon">
+                <span>Bacon</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/beans.jpg" alt="Beans">
+                <span>Beans</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/beef.jpg" alt="Beef">
+                <span>Beef</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/bread.jpg" alt="Bread">
+                <span>Bread</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/cauliflower.jpg" alt="Cauliflower">
+                <span>Cauliflower</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/cheese.jpg" alt="Cheese">
+                <span>Cheese</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/chicken.jpg" alt="Chicken">
+                <span>Chicken</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/chicken-breasts.jpg" alt="Chicken Breasts">
+                <span>Chicken Breasts</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/chicken-thighs.jpeg" alt="Chicken Thighs">
+                <span>Chicken Thighs</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/chicken-wings.jpg" alt="Chicken Wing">
+                <span>Chicken Wing</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/duck.jpg" alt="Duck">
+                <span>Duck</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/egg.jpg" alt="Egg">
+                <span>Egg</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/ground-beef.jpg" alt="Ground Beef">
+                <span>Ground Beef</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/pork.jpg" alt="Pork">
+                <span>Pork</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/pasta.jpg" alt="Pasta">
+                <span>Pasta</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/pork-chops.jpg" alt="Pork Chops">
+                <span>Pork Chops</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/potato.jpg" alt="Potato">
+                <span>Potato</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/rice.jpg" alt="Rice">
+                <span>Rice</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/salmon.jpg" alt="Salmon">
+                <span>Salmon</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/shrimp.jpg" alt="Shrimp">
+                <span>Shrimp</span>
+            </div>
+            <div class="ingredientItem">
+                <img src="./picture/tofu.jpg" alt="Tofu">
+                <span>Tofu</span>
+            </div>
+        </div>
     </div>
 
+    <!-- Slider section for popular foods -->
     <div class="foodGallery">
         <h2>Popular Foods</h2>
-        <div class="foodItems">
-            <!-- Food items will be added here dynamically -->
+        <span class="view-all-text"><a href="#">View All >></a></span>
+        <div class="slider-container food-slider">
             <div class="foodItem">
                 <img src="./picture/1.jpg" alt="Food Title 1">
                 <h3>Food Title 1</h3>
@@ -66,12 +141,57 @@
                 <h3>Food Title 2</h3>
                 <div class="rating">★★★☆☆</div>
             </div>
-            <!-- Add more food items as needed -->
+            <div class="foodItem">
+                <img src="./picture/2.jpg" alt="Food Title 3">
+                <h3>Food Title 3</h3>
+                <div class="rating">★★★☆☆</div>
+            </div>
+            <div class="foodItem">
+                <img src="./picture/2.jpg" alt="Food Title 4">
+                <h3>Food Title 4</h3>
+                <div class="rating">★★★☆☆</div>
+            </div>
+            <div class="foodItem">
+                <img src="./picture/2.jpg" alt="Food Title 5">
+                <h3>Food Title 5</h3>
+                <div class="rating">★★★☆☆</div>
+            </div>
+            <div class="foodItem">
+                <img src="./picture/2.jpg" alt="Food Title 6">
+                <h3>Food Title 6</h3>
+                <div class="rating">★★★☆☆</div>
+            </div>
         </div>
     </div>
+    <button class="floating-toggle" onclick="toggleDarkMode()"><img width="20px" src="./picture/moon-icon.png"></button>
+
     <footer>
         <p>&copy; 2024 FoodCraft. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+        // Function to toggle dark mode
+        // Function to toggle dark mode
+function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+
+    // Save the current mode in localStorage
+    if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('dark-mode', 'enabled');
+    } else {
+        localStorage.setItem('dark-mode', 'disabled');
+    }
+}
+
+// Check localStorage on page load to set the initial mode
+window.onload = function() {
+    const darkModeSetting = localStorage.getItem('dark-mode');
+    if (darkModeSetting === 'enabled') {
+        document.body.classList.add('dark-mode');
+    }
+};
+
+    </script>
 </body>
 </html>
