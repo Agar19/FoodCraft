@@ -97,6 +97,51 @@ body{
     padding-top: 4em;
 }
 
+
+/* Recipe details styling */
+#recipe-details {
+    background-color: var(--card-bg-color); /* White background for contrast */
+    padding: 2rem; /* Added padding for better spacing */
+    margin: 2rem 0; /* Margin to create space between elements */
+    border-radius: 8px; /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Limit the width for better readability */
+    font-family: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif';
+}
+
+/* Styling for titles within the recipe-details */
+#recipe-details h3 {
+    font-size: 1.8rem; /* Increase font size for better visibility */
+    color: var(--primary-color); /* Use the primary color for headings */
+    margin-bottom: 1rem; /* Add spacing after the heading */
+    border-bottom: 2px solid var(--primary-color); /* Add a border under headings */
+    padding-bottom: 0.5rem;
+}
+
+/* Styling for individual details */
+#recipe-details .details p {
+    font-size: 1.1rem; /* Increase font size for readability */
+    margin-bottom: 0.8rem; /* Add some space between details */
+    color: var(--textList-color); /* Use a dark gray for text */
+}
+
+/* Highlight the values in the recipe details */
+#recipe-details .details span {
+    font-weight: bold; /* Bold the important values */
+    color: var(--primary-color); /* Use primary color for emphasis */
+}
+.videotutorial{
+    padding: 3em;
+    width: 35em;
+}
+
+.food-picture{
+    float: left;
+    width: 35em;
+    height: 20em;
+    padding: 3em;
+}
+
 /* Footer styles */
 footer {
     text-align: center;

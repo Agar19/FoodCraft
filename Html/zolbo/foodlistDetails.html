@@ -28,59 +28,47 @@
     <main>
         <section class="categoriesListed">
             <h2 id="recipe-title">Shrimp and Broccoli - Fast & Easy Dinner</h2>
+            <img class="food-picture" src="./picture/1.jpg">
+            <iframe width="560" class="videotutorial" height="315" src="https://www.youtube.com/embed/VIDEO_ID" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
 
             <div id="recipe-details">
-                <h3>Recipe Details</h3>
-                <div class="details">
-                    <p>Prep Time: <span id="prep-time">10 minutes</span></p>
-                    <p>Cook Time: <span id="cook-time">15 minutes</span></p>
-                    <p>Total Time: <span id="total-time">25 minutes</span></p>
-                    <p>Servings: <span id="servings">4 servings</span></p>
+                <!-- Ingredients Section -->
+                <div id="ingredients">
+                    <h4>Ingredients</h4>
+                    <ul>
+                        <li>1 lb shrimp, peeled and deveined</li>
+                        <li>1 head broccoli, chopped</li>
+                        <li>2 tbsp olive oil</li>
+                        <li>3 cloves garlic, minced</li>
+                        <li>Salt and pepper to taste</li>
+                    </ul>
                 </div>
-            </div>
-
-            <div id="ingredients-section">
-                <h3>Ingredients</h3>
-                <ul id="ingredients-list">
-                    <li>1 lb shrimp, peeled and deveined</li>
-                    <li>2 cups broccoli florets</li>
-                    <li>3 cloves garlic, minced</li>
-                    <li>2 tablespoons soy sauce</li>
-                    <li>1 tablespoon olive oil</li>
-                    <li>Salt and pepper to taste</li>
-                    <li>1 teaspoon sesame oil (optional)</li>
-                </ul>
-            </div>
-
-            <div id="instructions-section">
-                <h3>Instructions</h3>
-                <ol id="instructions-list">
-                    <li>Heat olive oil in a pan over medium heat.</li>
-                    <li>Add minced garlic and sauté until fragrant.</li>
-                    <li>Add shrimp and cook until pink.</li>
-                    <li>Add broccoli and soy sauce, stir-fry for 5 minutes.</li>
-                    <li>Season with salt, pepper, and sesame oil, if using.</li>
-                    <li>Serve hot.</li>
-                </ol>
-            </div>
-
-            <div id="nutrition-section">
-                <h3>Nutritional Information</h3>
+            
+                <!-- Instructions Section -->
+                <div id="instructions">
+                    <h4>Instructions</h4>
+                    <ol>
+                        <li>Heat olive oil in a large skillet over medium heat.</li>
+                        <li>Add garlic and cook until fragrant.</li>
+                        <li>Add shrimp and cook for 3-4 minutes per side until pink.</li>
+                        <li>Add broccoli and cook for another 5 minutes until tender.</li>
+                        <li>Season with salt and pepper, serve hot.</li>
+                    </ol>
+                </div>
+            
+                <!-- Nutrition Info Section -->
                 <div id="nutrition-info">
-                    <p>Calories: 250</p>
-                    <p>Protein: 20g</p>
+                    <h4>Nutrition Information</h4>
+                    <p>Calories: 250 kcal</p>
+                    <p>Protein: 25g</p>
                     <p>Fat: 10g</p>
-                    <p>Carbohydrates: 15g</p>
-                    <p>Fiber: 2g</p>
-                    <p>Sugar: 1g</p>
+                    <p>Carbohydrates: 12g</p>
                 </div>
             </div>
-
-            <div id="tips-section">
-                <h3>Tips</h3>
-                <p id="tips-text">You can use frozen shrimp for convenience. Just thaw before cooking.</p>
-            </div>
-        </section>
+                    </section>
     </main>
     <button class="floating-toggle" onclick="toggleDarkMode()"><img width="20px" src="./picture/moon-icon.png"></button>
 
