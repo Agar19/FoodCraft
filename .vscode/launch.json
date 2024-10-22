@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open foodlist.html",
-            "file": "c:\\Users\\BatzolbooBat-Erdene\\Desktop\\NUM\\Web App\\FoodCraft\\Html\\zolbo\\foodlist.html"
+            "name": "Open foodlistDetails.html",
+            "file": "c:\\Users\\BatzolbooBat-Erdene\\Desktop\\NUM\\Web App\\FoodCraft\\FoodCraft\\Html\\zolbo\\foodlistDetails.html"
         }
     ]
 }

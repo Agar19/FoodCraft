@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Details</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styleDetail.css">
 </head>
 <body>
-    <header class="headerTop">Explore your recipes</header>
+    <header>
+        <img href="mainPage.html" src="../pics/RatLogo-removebg-preview.png" alt="FoodCraft Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Calorie count</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <form role="search" class="search-form">
+            <input type="search" placeholder="Search recipes..." aria-label="Search recipes">
+            <button type="submit">Search</button>
+        </form>
+        <a href="login.html" class="sign-up">Sign Up/Log In</a>
+    </header>
 
     <main>
         <section class="categoriesListed">
@@ -66,9 +82,31 @@
             </div>
         </section>
     </main>
+    <button class="floating-toggle" onclick="toggleDarkMode()"><img width="20px" src="./picture/moon-icon.png"></button>
 
     <footer>
         <p>&copy; 2024 FoodCraft. All rights reserved.</p>
     </footer>
+    <script>
+        function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+
+    // Save the current mode in localStorage
+    if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('dark-mode', 'enabled');
+    } else {
+        localStorage.setItem('dark-mode', 'disabled');
+    }
+}
+
+// Check localStorage on page load to set the initial mode
+window.onload = function() {
+    const darkModeSetting = localStorage.getItem('dark-mode');
+    if (darkModeSetting === 'enabled') {
+        document.body.classList.add('dark-mode');
+    }
+};
+    </script>
 </body>
 </html>
