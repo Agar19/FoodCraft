@@ -13,13 +13,11 @@ body {
     color: var(--text-color);
 }
 
-h3{
+p, h3{
     margin: 0.3125em;
 
 }
-p{
-    margin: 0.3125em;
-}
+
 
 
 img {
@@ -111,6 +109,10 @@ nav ul li a:hover {
 main {
     padding: 0;
     margin-top: var(--header-height);
+}
+
+.viewMore{
+    right: 5%;
 }
 
 .slider {
