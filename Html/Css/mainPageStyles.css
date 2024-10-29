@@ -13,6 +13,16 @@ body {
     color: var(--text-color);
 }
 
+<<<<<<< HEAD
+=======
+p, h3{
+    margin: 0.3125em;
+
+}
+
+
+
+>>>>>>> 57b2163b342acdc57622007c6ae81f0a9e09fddb
 img {
     max-width: 100%;
     height: auto;
@@ -104,10 +114,21 @@ main {
     margin-top: var(--header-height);
 }
 
+<<<<<<< HEAD
 .slider {
     position: relative;
     margin-bottom: 2rem;
     padding:  1rem;
+=======
+.viewMore{
+    right: 5%;
+}
+
+.slider {
+    position: relative;
+    margin-bottom: 0.5rem;
+    padding:  0.5rem;
+>>>>>>> 57b2163b342acdc57622007c6ae81f0a9e09fddb
     background-color: #fff;
 }
 
@@ -120,12 +141,22 @@ main {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+<<<<<<< HEAD
+=======
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+>>>>>>> 57b2163b342acdc57622007c6ae81f0a9e09fddb
 }
 
 .slider article {
     flex: 0 0 600px;
+<<<<<<< HEAD
     margin-right: 1rem;
     background-color: #fff;
+=======
+    margin-right: 0rem;
+    background-color: white;
+>>>>>>> 57b2163b342acdc57622007c6ae81f0a9e09fddb
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -137,12 +168,25 @@ main {
     transform: translateY(-5px);
 }
 
+<<<<<<< HEAD
 .slider article img {
     width: 100%;
     height: 400px; 
     object-fit: cover; /* This ensures the image covers the area without stretching */
     border-radius: 5px;
     margin-bottom: 1rem;
+=======
+.ArticleTag{
+    margin: 0.315em;
+}
+
+.slider article img {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover; 
+    border-radius: 5px;
+    margin-bottom: 0rem;
+>>>>>>> 57b2163b342acdc57622007c6ae81f0a9e09fddb
 }
 
 .slider .prev,
@@ -153,7 +197,11 @@ main {
     background-color: rgba(0,0,0,0.5);
     color: white;
     border: none;
+<<<<<<< HEAD
     padding: 1rem;
+=======
+    padding: 0.5rem;
+>>>>>>> 57b2163b342acdc57622007c6ae81f0a9e09fddb
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -191,6 +239,10 @@ footer {
     background-color: var(--secondary-color);
     color: white;
     padding: 1rem;
+<<<<<<< HEAD
+=======
+    margin-top: 5rem;
+>>>>>>> 57b2163b342acdc57622007c6ae81f0a9e09fddb
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;

@@ -1,0 +1,281 @@
+:root {
+    --primary-color: #ff6600;   
+    --secondary-color: #333333; 
+    --background-color: #ffffff; 
+    --backgroundHeader-color: #333333;
+    --textList-color: #333333;      
+    --text-color:#ffff;
+    --accent-color: #ffc107;    
+    --hover-color: #e65c00;     
+    --footer-bg-color: #222222; 
+    --card-bg-color: #ffffff;   
+    --dark-background-color: #000000; 
+    --dark-text-color: #ffffff; 
+}
+
+header {
+    background-color: var(--backgroundHeader-color);
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-form button {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+.sign-up {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sign-up:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color); 
+    color: var(--textList-color); 
+    padding-top: 80px; 
+    transition: background-color 0.5s ease, color 0.5s ease; 
+
+}
+
+body.dark-mode {
+    background-color: var(--dark-background-color); 
+    color: var(--dark-text-color); 
+}
+
+.headerTop,
+.ingredientsGallery h2,
+.foodGallery h2,
+.foodItem h3,
+.view-all-text a {
+    color: var(--textList-color); 
+}
+
+body.dark-mode .headerTop,
+body.dark-mode .ingredientsGallery h2,
+body.dark-mode .foodGallery h2,
+body.dark-mode .foodItem h3,
+body.dark-mode .view-all-text a {
+    color: var(--dark-text-color); 
+}
+
+div {
+    color: inherit; 
+}
+.headerTop {
+    font-size: 2rem;
+    color: var(--textList-color);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.ingredientsGallery, .foodGallery {
+    padding: 20px;
+    position: relative; 
+    margin-top: 20px; 
+}
+.ingredientsGallery h2 {
+    color: var(--textList-color); 
+    margin: 10px 0; 
+    font-size: 1.5rem; 
+}
+
+.ingredients-slider, .food-slider {
+    display: flex;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; 
+    gap: 10px;
+}
+
+.slider-container {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+.slider-container::-webkit-scrollbar {
+    display: none; 
+}
+
+.ingredientItem, .foodItem {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    text-align: center;
+    scroll-snap-align: start;
+    background-color: var(--white-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    transition: transform var(--transition-speed);
+    transition: transform 0.3s ease-in-out;
+}
+
+.ingredientItem {
+    flex: 0 0 120px;
+}
+
+.foodItem {
+    flex: 0 0 200px;
+}
+
+.ingredientItem:hover, .foodItem:hover {
+    transform: translateY(-5px);
+}
+
+.ingredientItem img, .foodItem img {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.ingredientItem img {
+    width: 80px;
+    height: 80px;
+}
+
+.foodItem img {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.ingredientItem span, .foodItem .rating {
+    display: block;
+    margin-top: 5px;
+}
+
+.view-all-text {
+    position: absolute; 
+    top: 50px; 
+    right: 50px; 
+    font-size: 16px; 
+}
+
+.view-all-text a {
+    text-decoration: none; 
+    color: var(--primary-color); 
+    font-weight: bold; 
+}
+
+.view-all-text a:hover {
+    text-decoration: underline; 
+    color: var(--hover-color); 
+}
+
+.prev, .next, .ingredients-prev, .ingredients-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+    z-index: 1;
+}
+
+.prev:hover, .next:hover, .ingredients-prev:hover, .ingredients-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.ingredients-prev, .prev {
+    left: 10px;
+}
+
+.ingredients-next, .next {
+    right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--footer-bg-color);
+    color: #fff;
+}
+
+.floating-toggle {
+    position: fixed;      
+    bottom: 20px;        
+    right: 20px;         
+    background-color: var(--primary-color); 
+    color: white;        
+    border: none;        
+    border-radius: 5px;  
+    padding: 10px 15px;  
+    font-size: 1rem;     
+    cursor: pointer;      
+    z-index: 1000;       
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); 
+    transition: background-color 0.3s; 
+}
+
+.floating-toggle:hover {
+    background-color: var(--hover-color); 
+}

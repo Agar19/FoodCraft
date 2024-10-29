@@ -4,6 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+<<<<<<< HEAD
         
 
 
@@ -12,6 +13,13 @@
             "request": "launch",
             "name": "Open about.html",
             "file": "/Users/bolormaabattogtokh/FoodCraft/Html/about.html"
+=======
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open foodlistDetails.html",
+            "file": "c:\\Users\\BatzolbooBat-Erdene\\Desktop\\NUM\\Web App\\FoodCraft\\FoodCraft\\Html\\zolbo\\foodlistDetails.html"
+>>>>>>> 57b2163b342acdc57622007c6ae81f0a9e09fddb
         }
     ]
 }
