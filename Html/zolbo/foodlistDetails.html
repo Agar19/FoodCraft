@@ -8,7 +8,9 @@
 </head>
 <body>
     <header>
-        <img href="mainPage.html" src="../pics/RatLogo-removebg-preview.png" alt="FoodCraft Logo" class="logo">
+        <a href="mainPage.html">
+            <img src="../pics/RatLogo-removebg-preview.png" alt="FoodCraft Logo" class="logo">
+        </a>
         <nav>
             <ul>
                 <li><a href="profile.html">Profile</a></li>
@@ -26,73 +28,65 @@
     </header>
 
     <main>
-        <section class="categoriesListed">
-            <h2 id="recipe-title">Shrimp and Broccoli - Fast & Easy Dinner</h2>
-            <img class="food-picture" src="./picture/1.jpg">
-            <iframe width="560" class="videotutorial" height="315" src="https://www.youtube.com/embed/VIDEO_ID" 
-    title="YouTube video player" frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen></iframe>
+        <section id="recipe-list">
+            <!-- Recipe list will be populated dynamically here -->
+        </section>
+
+        <section id="recipe-container">
+            <!-- Recipe details will be populated dynamically here -->
+            <h2 id="recipe-title"></h2>
+            <img id="recipe-image" src="" alt="Recipe Image" class="food-picture">
+            <iframe width="560" height="315" id="recipe-video" class="videotutorial" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
 
             <div id="recipe-details">
-                <!-- Ingredients Section -->
                 <div id="ingredients">
                     <h4>Ingredients</h4>
-                    <ul>
-                        <li>1 lb shrimp, peeled and deveined</li>
-                        <li>1 head broccoli, chopped</li>
-                        <li>2 tbsp olive oil</li>
-                        <li>3 cloves garlic, minced</li>
-                        <li>Salt and pepper to taste</li>
-                    </ul>
+                    <ul id="ingredient-list"></ul>
                 </div>
 
-                <!-- Instructions Section -->
                 <div id="instructions">
                     <h4>Instructions</h4>
-                    <ol>
-                        <li>Heat olive oil in a large skillet over medium heat.</li>
-                        <li>Add garlic and cook until fragrant.</li>
-                        <li>Add shrimp and cook for 3-4 minutes per side until pink.</li>
-                        <li>Add broccoli and cook for another 5 minutes until tender.</li>
-                        <li>Season with salt and pepper, serve hot.</li>
-                    </ol>
+                    <ol id="instruction-list"></ol>
                 </div>
 
-                <!-- Nutrition Info Section -->
                 <div id="nutrition-info">
                     <h4>Nutrition Information</h4>
-                    <p>Calories: 250 kcal</p>
-                    <p>Protein: 25g</p>
-                    <p>Fat: 10g</p>
-                    <p>Carbohydrates: 12g</p>
+                    <p id="calories"></p>
+                    <p id="protein"></p>
+                    <p id="fat"></p>
+                    <p id="carbohydrates"></p>
                 </div>
             </div>
-                    </section>
+        </section>
     </main>
-    <button class="floating-toggle" onclick="toggleDarkMode()"><img width="20px" src="./picture/moon-icon.png"></button>
+
+    <button class="floating-toggle" onclick="toggleDarkMode()">
+        <img width="20px" src="./picture/moon-icon.png">
+    </button>
 
     <footer>
         <p>&copy; 2024 FoodCraft. All rights reserved.</p>
     </footer>
+
+    <script src="./javascript/foodDetails.js"></script>
     <script>
         function toggleDarkMode() {
-    const body = document.body;
-    body.classList.toggle('dark-mode');
+            const body = document.body;
+            body.classList.toggle('dark-mode');
 
-    if (body.classList.contains('dark-mode')) {
-        localStorage.setItem('dark-mode', 'enabled');
-    } else {
-        localStorage.setItem('dark-mode', 'disabled');
-    }
-}
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('dark-mode', 'enabled');
+            } else {
+                localStorage.setItem('dark-mode', 'disabled');
+            }
+        }
 
-window.onload = function() {
-    const darkModeSetting = localStorage.getItem('dark-mode');
-    if (darkModeSetting === 'enabled') {
-        document.body.classList.add('dark-mode');
-    }
-};
+        window.onload = function() {
+            const darkModeSetting = localStorage.getItem('dark-mode');
+            if (darkModeSetting === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        };
     </script>
 </body>
 </html>

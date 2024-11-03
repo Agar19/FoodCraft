@@ -1,0 +1,158 @@
+{
+    "recipesData": [
+        {
+            "id": 1,
+            "title": "Recipe 1",
+            "rating": 5,
+            "image": "./picture/1.jpg",
+            "video": "https://www.youtube.com/embed/VIDEO_ID_1",
+            "ingredients": ["Asparagus", "Bacon", "Cheese"],
+            "instructions": [
+                "Step 1: Prepare the asparagus by trimming the ends.",
+                "Step 2: Cook bacon until crispy.",
+                "Step 3: Combine bacon with asparagus and sprinkle cheese on top.",
+                "Step 4: Bake until cheese is melted."
+            ],
+            "nutrition": {
+                "calories": "300",
+                "protein": "15g",
+                "fat": "20g",
+                "carbohydrates": "10g"
+            }
+        },
+        {
+            "id": 2,
+            "title": "Recipe 2",
+            "rating": 3,
+            "image": "./picture/2.jpg",
+            "video": "https://www.youtube.com/embed/VIDEO_ID_2",
+            "ingredients": ["Avocado", "Chicken", "Rice"],
+            "instructions": [
+                "Step 1: Cook the rice according to package instructions.",
+                "Step 2: Grill chicken until cooked through.",
+                "Step 3: Slice avocado and serve on top of rice with chicken."
+            ],
+            "nutrition": {
+                "calories": "400",
+                "protein": "25g",
+                "fat": "15g",
+                "carbohydrates": "50g"
+            }
+        },
+        {
+            "id": 3,
+            "title": "Recipe 3",
+            "rating": 4,
+            "image": "./picture/3.jpg",
+            "video": "https://www.youtube.com/embed/VIDEO_ID_3",
+            "ingredients": ["Pasta", "Tomato", "Basil"],
+            "instructions": [
+                "Step 1: Boil water and cook pasta until al dente.",
+                "Step 2: Prepare the sauce by simmering tomatoes and basil.",
+                "Step 3: Toss pasta with the sauce before serving."
+            ],
+            "nutrition": {
+                "calories": "350",
+                "protein": "12g",
+                "fat": "5g",
+                "carbohydrates": "60g"
+            }
+        },
+        {
+            "id": 4,
+            "title": "Recipe 4",
+            "rating": 2,
+            "image": "./picture/4.jpg",
+            "video": "https://www.youtube.com/embed/VIDEO_ID_4",
+            "ingredients": ["Salmon", "Lemon", "Dill"],
+            "instructions": [
+                "Step 1: Preheat the oven to 375°F (190°C).",
+                "Step 2: Place salmon on a baking sheet and season with lemon and dill.",
+                "Step 3: Bake for 20 minutes or until cooked through."
+            ],
+            "nutrition": {
+                "calories": "250",
+                "protein": "22g",
+                "fat": "15g",
+                "carbohydrates": "0g"
+            }
+        },
+        {
+            "id": 5,
+            "title": "Recipe 5",
+            "rating": 5,
+            "image": "./picture/5.jpg",
+            "video": "https://www.youtube.com/embed/VIDEO_ID_5",
+            "ingredients": ["Beef", "Garlic", "Potato"],
+            "instructions": [
+                "Step 1: Peel and chop potatoes.",
+                "Step 2: Sauté garlic and add beef to cook thoroughly.",
+                "Step 3: Serve with mashed potatoes on the side."
+            ],
+            "nutrition": {
+                "calories": "500",
+                "protein": "30g",
+                "fat": "25g",
+                "carbohydrates": "40g"
+            }
+        },
+        {
+            "id": 6,
+            "title": "Recipe 6",
+            "rating": 4,
+            "image": "./picture/6.jpg",
+            "video": "https://www.youtube.com/embed/VIDEO_ID_6",
+            "ingredients": ["Spinach", "Feta", "Phyllo Dough"],
+            "instructions": [
+                "Step 1: Preheat the oven to 350°F (175°C).",
+                "Step 2: Mix spinach and feta cheese.",
+                "Step 3: Layer phyllo dough and fill with spinach mixture.",
+                "Step 4: Bake until golden brown."
+            ],
+            "nutrition": {
+                "calories": "220",
+                "protein": "8g",
+                "fat": "15g",
+                "carbohydrates": "20g"
+            }
+        },
+        {
+            "id": 7,
+            "title": "Recipe 7",
+            "rating": 3,
+            "image": "./picture/7.jpg",
+            "video": "https://www.youtube.com/embed/VIDEO_ID_7",
+            "ingredients": ["Quinoa", "Black Beans", "Corn"],
+            "instructions": [
+                "Step 1: Cook quinoa according to package instructions.",
+                "Step 2: Mix in black beans and corn.",
+                "Step 3: Serve warm with lime juice."
+            ],
+            "nutrition": {
+                "calories": "350",
+                "protein": "15g",
+                "fat": "5g",
+                "carbohydrates": "60g"
+            }
+        },
+        {
+            "id": 8,
+            "title": "Recipe 8",
+            "rating": 5,
+            "image": "./picture/8.jpg",
+            "video": "https://www.youtube.com/embed/VIDEO_ID_8",
+            "ingredients": ["Shrimp", "Coconut Milk", "Curry"],
+            "instructions": [
+                "Step 1: Sauté shrimp in a pan.",
+                "Step 2: Add coconut milk and curry powder.",
+                "Step 3: Simmer until shrimp are cooked through."
+            ],
+            "nutrition": {
+                "calories": "300",
+                "protein": "20g",
+                "fat": "18g",
+                "carbohydrates": "10g"
+            }
+        }
+    ]
+}

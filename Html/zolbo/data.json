@@ -1,0 +1,154 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Recipe 1",
+      "rating": 5,
+      "image": "./picture/1.jpg",
+      "ingredients": ["Asparagus", "Bacon", "Cheese"]
+    },
+    {
+      "id": 2,
+      "title": "Recipe 2",
+      "rating": 3,
+      "image": "./picture/2.jpg",
+      "ingredients": ["Avocado", "Chicken", "Rice"]
+    },
+    {
+      "id": 3,
+      "title": "Recipe 3",
+      "rating": 4,
+      "image": "./picture/3.jpg",
+      "ingredients": ["Pasta", "Tomato", "Basil"]
+    },
+    {
+      "id": 4,
+      "title": "Recipe 4",
+      "rating": 2,
+      "image": "./picture/4.jpg",
+      "ingredients": ["Salmon", "Lemon", "Dill"]
+    },
+    {
+      "id": 5,
+      "title": "Recipe 5",
+      "rating": 5,
+      "image": "./picture/5.jpg",
+      "ingredients": ["Beef", "Garlic", "Potato"]
+    },
+    {
+      "id": 6,
+      "title": "Recipe 6",
+      "rating": 4,
+      "image": "./picture/6.jpg",
+      "ingredients": ["Spinach", "Feta", "Phyllo Dough"]
+    },
+    {
+      "id": 7,
+      "title": "Recipe 7",
+      "rating": 3,
+      "image": "./picture/7.jpg",
+      "ingredients": ["Quinoa", "Black Beans", "Corn"]
+    },
+    {
+      "id": 8,
+      "title": "Recipe 8",
+      "rating": 5,
+      "image": "./picture/8.jpg",
+      "ingredients": ["Shrimp", "Coconut Milk", "Curry"]
+    }
+  ],
+  "ingredients":[
+    {
+      "name": "Asparagus",
+      "image": "./picture/Asparagus.jpg"
+  },
+  {
+      "name": "Avocado",
+      "image": "./picture/Avocado.jpg"
+  },
+  {
+    "name": "Bacon",
+    "image": "./picture/bacon.jpg"
+  },
+  {
+    "name": "Beans",
+    "image": "./picture/beans.jpg"
+  },
+  {
+    "name": "Beef",
+    "image": "./picture/beef.jpg"
+  },
+  {
+    "name": "Bread",
+    "image": "./picture/bread.jpg"
+  },
+  {
+    "name": "Cauliflower",
+    "image": "./picture/cauliflower.jpg"
+  },
+  {
+    "name": "Cheese",
+    "image": "./picture/cheese.jpg"
+  },
+  {
+    "name": "Chicken",
+    "image": "./picture/chicken.jpg"
+  },
+  {
+    "name": "Chicken breasts",
+    "image": "./picture/chicken-breasts.jpg"
+  },
+  {
+    "name": "Chicken thighs",
+    "image": "./picture/chicken-thighs.jpeg"
+  },
+  {
+    "name": "Chicken wings",
+    "image": "./picture/chicken-wings.jpg"
+  },
+  {
+    "name": "Duck",
+    "image": "./picture/duck.jpg"
+  },
+  {
+    "name": "Egg",
+    "image": "./picture/egg.jpg"
+  },
+  {
+    "name": "Ground beef",
+    "image": "./picture/ground-beef.jpg"
+  },
+  {
+    "name":"Pasta",
+    "image": "./picture/pasta.jpg"
+  },
+  {
+    "name": "Pork",
+    "image": "./picture/pork.jpg"
+  },
+  {
+    "name": "Pork chops",
+    "image": "./picture/pork-chops.jpg"
+  },
+  {
+    "name": "Potato",
+    "image": "./picture/potato.jpg"
+  },
+  {
+    "name": "Rice",
+    "image": "./picture/rice.jpg"
+  },
+  {
+    "name": "Salmon",
+    "image": "./picture/salmon.jpg"
+  },
+  {
+    "name": "Shrimp",
+    "image": "./picture/shrimp.jpg"
+  },
+  {
+    "name": "Tofu",
+    "image": "./picture/tofu.jpg"
+  }
+  ]
+}
